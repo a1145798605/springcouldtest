@@ -1,4 +1,7 @@
 test:
   userName: lisi
   userage: 12
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
