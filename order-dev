@@ -1,4 +1,2 @@
-
-test:
-  userName: lisi
-  userage: 12
+userName: lisi
+userage: 12
