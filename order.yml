@@ -1,9 +1,22 @@
 spring:
-  application:
-    name: product
-server:
-  port: 8091
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8090/eureka
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: order
+      server:
+        default-profile: devtest
+        spring:
+          application:
+            name: configclient
+        server:
+          port: 8091
+        eureka:
+          client:
+            service-url:
+              defaultZone: http://localhost:8090/eureka
+test:
+  userName: lisi
+  userage: 12
+
